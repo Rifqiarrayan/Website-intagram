@@ -2,7 +2,6 @@ import React from "react";
 import vid from "./assets/vid.mp4";
 
 export default function Welcome() {
-  // Fungsi untuk membuka link ketika tombol diklik
   const handleDownloadClick = () => {
     window.open("https://play.google.com/store/apps/details?id=com.instagram.android&hl=id", "_blank");
   };
@@ -34,7 +33,6 @@ export default function Welcome() {
         </p>
       </div>
 
-      {/* Garis vertikal penuh dengan teks Download App di kiri */}
       <div
         onClick={handleDownloadClick}
         className="absolute bottom-0 left-0 w-full bg-purple-500 text-white flex items-center justify-start py-3 px-8 cursor-pointer hover:bg-purple-600 transition-all z-20"
