@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import lov from './assets/lov.jpg';
+import lov1 from './assets/lov1.jpg';
+import lov2 from './assets/lov2.jpg';
+import lov3 from './assets/lov3.jpg';
+import c1 from './assets/c1.jpg';
+import c2 from './assets/c2.jpg';
+import c3 from './assets/c3.jpg';
+import c4 from './assets/c4.jpg';
 
 export default function Learn() {
   const [activeSection, setActiveSection] = useState(null);
@@ -11,15 +19,16 @@ export default function Learn() {
     }
   };
 
+  // Set gambar yang berbeda untuk setiap section
   const sections = [
-    { id: 'section1', img: 1, title: '1.1: Instagram Overview' },
-    { id: 'section2', img: 2, title: '1.2: Stand Out on Instagram' },
-    { id: 'section3', img: 3, title: '1.3: Stay Safe' },
-    { id: 'section4', img: 4, title: '1.4: Community Guidelines' },
-    { id: 'section5', img: 5, title: '2.1: Feel It Reel It' },
-    { id: 'section6', img: 6, title: '2.2: Connect with Stories' },
-    { id: 'section7', img: 7, title: '2.3: Common Questions and Myths' },
-    { id: 'section8', img: 8, title: '2.4: Collaborate with Remix & Collabs' },
+    { id: 'section1', img: lov, title: '1.1: Instagram Overview' },
+    { id: 'section2', img: lov1, title: '1.2: Stand Out on Instagram' },
+    { id: 'section3', img: lov2, title: '1.3: Stay Safe' },
+    { id: 'section4', img: lov3, title: '1.4: Community Guidelines' },
+    { id: 'section5', img: c1, title: '2.1: Feel It Reel It' },
+    { id: 'section6', img: c2, title: '2.2: Connect with Stories' },
+    { id: 'section7', img: c3, title: '2.3: Common Questions and Myths' },
+    { id: 'section8', img: c4, title: '2.4: Collaborate with Remix & Collabs' },
   ];
 
   const renderCards = (startIndex) =>
@@ -32,7 +41,7 @@ export default function Learn() {
         onClick={() => handleClick(id)}
       >
         <img
-          src={`https://i.pravatar.cc/300?img=${img}`}
+          src={img} // Menggunakan gambar lokal sesuai dengan masing-masing section
           alt={title}
           className="w-full h-40 sm:h-48 md:h-56 object-cover"
         />
