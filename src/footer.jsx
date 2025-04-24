@@ -6,7 +6,7 @@ export default function Footer() {
                     © 2025 Meta. All Rights Reserved.
                 </p>
                 <p className="text-white text-sm">
-                    powered by <span className="font-semibold">RakaArrayan</span>
+                    powered by <span className="font-semibold">RifqiArrayan</span>
                 </p>
             </div>
         </footer>
